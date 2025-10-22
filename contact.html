@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<nav>
+    <ul>
+        <li> <a href="index.html">Profile</a> </li>
+        <li> <a href="contact.html" aria-current="page">Contact</a> </li>
+        <li> <a href="about.html">About-me</a> </li>
+    </ul>
+</nav>
+<main>
+    <div class="contact-container">
+       
+        <div class="form-section">
+            <h1>Contact Us</h1>
+            <p class="subtitle">Interested in working together?<br>Fill in the form below to get started.</p>
+
+            <div data-testid="test-contact-success" class="success-message" role="alert">
+                Thank you for your message! We'll get back to you within 24hrs
+            </div>
+
+            <form id="contactForm" novalidate> 
+                <div class="form-group">
+                    <label for="fullName">Name</label>
+                    <input type="text" id="fullName" data-testid="test-contact-name"
+                    name="fullName"
+                    aria-required="true"
+                    aria-describedby="nameError"
+                    
+                    required>
+
+                    <div id="nameError"
+                    data-testid="test-contact-error-name"
+                    class="error-message"
+                    role="alert">
+                    Please enter your fullname
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email"
+                    id="email"
+                    name="email"
+                    data-testid="test-contact-email"
+                    aria-required="true"
+                    aria-describedby="emailError"
+                    required>
+                    <div id="emailError"
+                    data-testid="test-contact-error-email"
+                    class="error-message"
+                    role="alert">
+                    Please enter a valid email address 
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text"
+                    id="subject"
+                    name="subject"
+                    data-testid="test-contact-subject"
+                    aria-required="true"
+                    aria-describedby="subjectError"
+                    required>
+                    <div id="subjectError"
+                    data-testid="test-contact-error-subject"
+                    class="error-message"
+                    role="alert">Please enter a subject
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your message</label>
+                    <textarea name="message" id="message" data-testid="test-contact-message"
+                    aria-required="true"
+                    aria-describedby="messageError"
+                    required></textarea>
+                    <div id="messageError"
+                    data-testid="test-contact-error-message"
+                    class="error-message"
+                    role="alert">
+                        Please enter a message (at least 10 characters)
+                    </div>
+                </div>
+
+                <button type="submit" data-testid="test-contact-submit">Send</button>
+            </form>
+        </div>
+
+        <div class="info-section">
+            <div class="info-box">
+                <div class="info-header"></div>
+                <h3>Don't feel like talking right now?</h3>
+                <p>That's okay. I understand. We all feel like that sometimes. We've got you covered and there are other ways to keep up to date with what's going on in our studio</p>
+                
+                <div class="social-icons">
+                    <a href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter" title="twitter" ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg></a>
+           
+                    <a href="#" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                    </a>
+                   <a href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                title="linkedin"
+                ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg></a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    const form = document.getElementById('contactForm');
+    const successMessage=document.querySelector('[data-testid="test-contact-success"]');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    function validateName(name){
+        return name.trim().length>0;
+    }
+    
+    function validateEmail(email){
+        return emailRegex.test(email.trim());
+    }
+   function validateSubject(subject){
+    return subject.trim().length> 0;
+   }
+   function validateMessage (message){
+    return message.trim().length >=10;
+   }
+
+  function showError (input, errorElement){
+    input.classList.add('error');
+    errorElement.classList.add ('show');
+  }
+  function hideError(input, errorElement){
+    input.classList.remove('error');
+    errorElement.classList.remove('show');
+  }
+
+  const nameInput = document.getElementById('fullName');
+  const emailInput=document.getElementById('email');
+  const subjectInput= document.getElementById('subject');
+  const messageInput=document.getElementById('message');
+
+  nameInput.addEventListener('blur', function(){
+    const errorElement= document.getElementById('nameError');
+    if(!validateName(this.value)){
+        showError(this, errorElement);
+    }else{
+        hideError(this, errorElement);
+    }
+  });
+
+  emailInput.addEventListener('blur', function(){
+    const errorElement=document.getElementById('emailError');
+    if (!validateEmail(this.value)){
+        showError(this, errorElement);
+    }
+    else{
+        hideError(this,errorElement);
+    }
+  });
+
+  subjectInput.addEventListener('blur', function(){
+    const errorElement=document.getElementById('subjectError');
+    if(!validateSubject (this.value)){
+        showError(this,errorElement);
+      }
+    else{
+        hideError(this,errorElement);
+    }
+  });
+  messageInput.addEventListener('blur', function(){
+    const errorElement=document.getElementById('messageError');
+    if(!validateMessage (this.value)){
+        showError(this,errorElement);
+      }
+    else{
+        hideError(this,errorElement);
+    }
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const subject = subjectInput.value;
+    const message = messageInput.value;
+
+    let isValid = true;
+    if(!validateName(name)){
+        showError(nameInput, document.getElementById('nameError'));
+        isValid=false;
+    }
+    else{
+        hideError(nameInput,document.getElementById('nameError'));
+    }
+    if(!validateEmail(email)){
+        showError(emailInput, document.getElementById('emailError'));
+        isValid=false;
+    }
+    else{
+        hideError(emailInput,document.getElementById('emailError'));
+    }
+    if(!validateSubject(subject)){
+        showError(subjectInput, document.getElementById('subjectError'));
+        isValid=false;
+    }
+    else{
+        hideError(subjectInput,document.getElementById('subjectError'));
+    }
+    if(!validateMessage(message)){
+        showError(messageInput, document.getElementById('messageError'));
+        isValid=false;
+    }
+    else{
+        hideError(messageInput,document.getElementById('messageError'));
+    }
+    
+    if(isValid){
+        successMessage.classList.add('show');
+        form.reset();
+        successMessage.focus();
+
+        setTimeout(()=>{
+            successMessage.classList.remove('show');
+        }, 5000);
+    }else{
+        const firstError= form.querySelector('.error')
+            if (firstError){
+                firstError.focus();
+            }
+        }
+     
+  })
+</script>
+
+</body>
+</html>
